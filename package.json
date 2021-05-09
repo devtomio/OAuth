@@ -14,7 +14,6 @@
     "express-secure-only": "^0.2.1",
     "express-session": "^1.17.1",
     "helmet": "^4.6.0",
-    "morgan": "^1.10.0",
     "nanoid": "^3.1.22",
     "passport": "^0.4.1",
     "passport-discord": "^0.1.4",
@@ -25,13 +24,13 @@
     "passport-twitter": "^1.0.4",
     "rate-limiter-flexible": "^2.2.2",
     "redis": "^3.1.2",
-    "tixte-passport": "^1.0.1"
+    "tixte-passport": "^1.0.1",
+    "volleyball": "^1.5.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.10",
     "@types/express": "^4.17.11",
     "@types/express-session": "^1.17.3",
-    "@types/morgan": "^1.9.2",
     "@types/node": "^15.0.2",
     "@types/passport": "^1.0.6",
     "@types/passport-discord": "^0.1.3",
