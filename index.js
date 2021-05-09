@@ -3,6 +3,7 @@ const { RateLimiterRedis } = require('rate-limiter-flexible');
 const protect = require('@risingstack/protect');
 const session = require('express-session');
 const compression = require('compression');
+const initStats = require('@phil-r/stats');
 const Store = require('connect-redis');
 const { nanoid } = require('nanoid');
 const passport = require('passport');
@@ -21,6 +22,10 @@ const rateLimiter = new RateLimiterRedis({
 	keyPrefix: 'middleware',
 	points: 10,
 	duration: 1
+});
+const { statsMiddleware, getStats } = initStats({
+	endpointStats: true,
+	addHeader: true
 });
 
 passport.serializeUser((user, done) => done(null, user));
@@ -53,6 +58,7 @@ app.use(session({
 	},
 	store: new RedisStore({ client })
 }));
+app.use(statsMiddleware);
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(discord);
@@ -61,6 +67,8 @@ app.use(gitlab);
 app.use(twitch);
 
 app.get('/', (_, res) => res.status(200).json(home));
+
+app.get('/stats', (_, res) => res.status(200).json(getStats()));
 
 app.get('/logout', (req, res) => {
 	req.logout();

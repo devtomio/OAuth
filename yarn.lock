@@ -5,6 +5,18 @@ __metadata:
   version: 4
   cacheKey: 7
 
+"@phil-r/stats@npm:^1.4.3":
+  version: 1.4.3
+  resolution: "@phil-r/stats@npm:1.4.3"
+  dependencies:
+    on-headers: ^1.0.1
+    pretty-time: ^1.1.0
+    regexparam: ^1.3.0
+    uuid: ^7.0.2
+  checksum: bf9b250f51887d762acb827fbcc75de7206f3536f30d6df08b69b30ae557a5eae0bfe04a4d4a50a7d9d2772282962b8ec42eac2875ce901075c62749e0b2f3e3
+  languageName: node
+  linkType: hard
+
 "@risingstack/protect@npm:^1.2.0":
   version: 1.2.0
   resolution: "@risingstack/protect@npm:1.2.0"
@@ -1085,6 +1097,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "oauth@workspace:."
   dependencies:
+    "@phil-r/stats": ^1.4.3
     "@risingstack/protect": ^1.2.0
     "@types/cors": ^2.8.10
     "@types/express": ^4.17.11
@@ -1130,7 +1143,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"on-headers@npm:~1.0.2":
+"on-headers@npm:^1.0.1, on-headers@npm:~1.0.2":
   version: 1.0.2
   resolution: "on-headers@npm:1.0.2"
   checksum: 51e75c80755169e765aa76238722e5ad1623f62b13bbc23544ade20cdbb6950cf0e6aa91de35d02ec956f47dc072ee460d8eef82354e4abf8fa692885cb3f2d8
@@ -1244,6 +1257,13 @@ __metadata:
   version: 1.3.3
   resolution: "platform@npm:1.3.3"
   checksum: 5687db874734b997e7bc75a7a97ad297cc36cb3b63fe8adcaffceb542410fd1ebc144f1ede2348378f481dac73aa9e4ac7bff958c9bae3ffdd6b23c3e186e1b5
+  languageName: node
+  linkType: hard
+
+"pretty-time@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "pretty-time@npm:1.1.0"
+  checksum: 1467cfb88f0478c277dd4b47419d536f92e417ce17da927390145f9e69ba3ac5c36e54b2a5244538c64e3ed8d299c604117c3018b3a15772c5d030030adbdef6
   languageName: node
   linkType: hard
 
@@ -1364,6 +1384,13 @@ __metadata:
   version: 1.1.0
   resolution: "referrer-policy@npm:1.1.0"
   checksum: fee77ac8fab3feba2c9c61a8328813fd95a20b4835fb7a8b659b900725cb0c17fbbc65fbf19b839a3029200815e87203b784f94666b9d632025594eacb0eabe8
+  languageName: node
+  linkType: hard
+
+"regexparam@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "regexparam@npm:1.3.0"
+  checksum: 3be8055bc697d720647e2b2a781e8a784013e80d51724dce833524c8f1a9fbfa7efd3dac90572ce64191b82e908c8e70c6ff40b8da3ff0b3fb4199af73d4a8b5
   languageName: node
   linkType: hard
 
@@ -1593,6 +1620,15 @@ __metadata:
   bin:
     uuid: ./bin/uuid
   checksum: 1ce3f37e214d6d0dc94a6a9663a0365013ace66bc3fd5b203e6f5d2eeb978aaee1192367222386345d30b4c6a447928c501121aa84c637724bf105ef57284949
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^7.0.2":
+  version: 7.0.3
+  resolution: "uuid@npm:7.0.3"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: a56be8a5bbf2bae755d749d0693637274935b5ae250dfaaaf79241391cf1a7c142a202492196363ec62ec51a476e5e3fc4de2944d854abf2e9b35a33e0e31d4c
   languageName: node
   linkType: hard
 

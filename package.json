@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@phil-r/stats": "^1.4.3",
     "@risingstack/protect": "^1.2.0",
     "compression": "^1.7.4",
     "connect-redis": "^5.2.0",
