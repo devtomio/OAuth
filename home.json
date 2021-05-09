@@ -13,6 +13,12 @@
 			"GET /discord/callback",
 			"GET /discord/profile"
 		],
+		"twitter": [
+			"GET /twitter/login",
+			"GET /twitter/logout",
+			"GET /twitter/callback",
+			"GET /twitter/profile"
+		],
 		"github": [
 			"GET /github/login",
 			"GET /github/logout",

@@ -1,4 +1,4 @@
-const { discord, github, gitlab, twitch, google, tixte } = require('./endpoints');
+const { discord, github, gitlab, twitch, google, tixte, twitter } = require('./endpoints');
 const { RateLimiterRedis } = require('rate-limiter-flexible');
 const protect = require('@risingstack/protect');
 const secure = require('express-secure-only');
@@ -65,6 +65,7 @@ app.use(statsMiddleware);
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(discord);
+app.use(twitter);
 app.use(github);
 app.use(gitlab);
 app.use(twitch);

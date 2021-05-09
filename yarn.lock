@@ -173,6 +173,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/passport-twitter@npm:^1.0.36":
+  version: 1.0.36
+  resolution: "@types/passport-twitter@npm:1.0.36"
+  dependencies:
+    "@types/express": "*"
+    "@types/passport": "*"
+  checksum: ae525eab2046779971519360598289a11e083dda21243c04b7490d57086f42885d0f0a1fdd5e5cf33472e34f47a32a41d92577353738aa85eb450f917ec5bd67
+  languageName: node
+  linkType: hard
+
 "@types/passport@npm:*, @types/passport@npm:^1.0.6":
   version: 1.0.6
   resolution: "@types/passport@npm:1.0.6"
@@ -1129,6 +1139,7 @@ __metadata:
     "@types/passport-github2": ^1.2.4
     "@types/passport-google-oauth20": ^2.0.7
     "@types/passport-twitch-latest": ^1.0.0
+    "@types/passport-twitter": ^1.0.36
     compression: ^1.7.4
     connect-redis: ^5.2.0
     cors: ^2.8.5
@@ -1145,6 +1156,7 @@ __metadata:
     passport-gitlab2: ^5.0.0
     passport-google-oauth20: ^2.0.0
     passport-twitch-latest: ^1.0.0
+    passport-twitter: ^1.0.4
     rate-limiter-flexible: ^2.2.2
     redis: ^3.1.2
     tixte-passport: ^1.0.1
@@ -1217,6 +1229,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"passport-oauth1@npm:1.x.x":
+  version: 1.1.0
+  resolution: "passport-oauth1@npm:1.1.0"
+  dependencies:
+    oauth: 0.9.x
+    passport-strategy: 1.x.x
+    utils-merge: 1.x.x
+  checksum: bd809415b42a4acf521447381a19cb5b90a020504cec1fb999cad8ccb120b97174f1d21a40d6949aa5ced700688066faf71e9994adaf682d7079d40c54ed0fa7
+  languageName: node
+  linkType: hard
+
 "passport-oauth2@npm:1.x.x, passport-oauth2@npm:^1.4.0, passport-oauth2@npm:^1.5.0":
   version: 1.5.0
   resolution: "passport-oauth2@npm:1.5.0"
@@ -1245,6 +1268,16 @@ __metadata:
     pkginfo: ^0.4.1
     request: ^2.88.2
   checksum: 04f5ca7e1bdb6fedacee4c38047b65ec450368d2d6ab3eab2d3609c09db3909cae98efc618049c058f4c5313834f2569adfb4e3e3eacb37655b32dea7048bb8e
+  languageName: node
+  linkType: hard
+
+"passport-twitter@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "passport-twitter@npm:1.0.4"
+  dependencies:
+    passport-oauth1: 1.x.x
+    xtraverse: 0.1.x
+  checksum: 5fbe6dd615af3abfcd47da3b3214ae7befaf4c559ada930d0abdbb95993e63ef15f5ae9246be8d9fdf276e3058cac32afbc9342733b26fd1df83b1d1922a8733
   languageName: node
   linkType: hard
 
@@ -1696,5 +1729,21 @@ __metadata:
   version: 1.0.0
   resolution: "x-xss-protection@npm:1.0.0"
   checksum: 525bbde216ac5f5760df1a092e3d190ca471d7162e5fb3077a09b81274e0ab72ce272bc79966f41a7aafa3930deeb32249a080a6e3f49b30947c960dce1add17
+  languageName: node
+  linkType: hard
+
+"xmldom@npm:0.1.x":
+  version: 0.1.31
+  resolution: "xmldom@npm:0.1.31"
+  checksum: 69b741952c32338c915a74d3a6edc37bade58f93ff3722704cc6a10461c62cb5d6d1bcf2e7a3db6e3ff713f15c7e43089e54dfa369d471898905c489bd8e397b
+  languageName: node
+  linkType: hard
+
+"xtraverse@npm:0.1.x":
+  version: 0.1.0
+  resolution: "xtraverse@npm:0.1.0"
+  dependencies:
+    xmldom: 0.1.x
+  checksum: 0c267c9f89ce2581f39ff5b15daf799e0418b0ebca0d1872b5b637ef108284270b6085b4cf47d7979454cb90aa15539fb68e7e62803237a8e246b2d749fe5c74
   languageName: node
   linkType: hard

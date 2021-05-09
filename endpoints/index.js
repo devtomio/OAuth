@@ -1,4 +1,5 @@
 const discord = require('./discord');
+const twitter = require('./twitter');
 const github = require('./github');
 const gitlab = require('./gitlab');
 const twitch = require('./twitch');
@@ -11,5 +12,6 @@ module.exports = {
 	gitlab,
 	twitch,
 	google,
-	tixte
+	tixte,
+	twitter
 };
