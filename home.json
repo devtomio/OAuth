@@ -5,7 +5,8 @@
 			"GET /",
 			"GET /stats",
 			"GET /logout",
-			"GET /error"
+			"GET /error",
+			"GET /status/:code"
 		],
 		"discord": [
 			"GET /discord/login",

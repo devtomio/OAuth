@@ -956,6 +956,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"http-status-codes@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "http-status-codes@npm:2.1.4"
+  checksum: 7cd5b1c88e25541f6a2ec57dec257295ca5c7d996c8cb1d9d55cce84b63712978a94e649575f6ffac33b975101d4ef3e4f07c7e4e764b0290832a5a8419409a7
+  languageName: node
+  linkType: hard
+
+"http-status-emojis@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "http-status-emojis@npm:2.2.0"
+  checksum: 66dea36cceb81efe2dbd85b1a1ab1fe2e8f59557fa57e1f6b674cd5f3d4a609202d0e5460b1127b62a9c2a033f22cb3b979f6e663acdbd465f70a3018cd774e8
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
@@ -1189,6 +1203,8 @@ __metadata:
     express-secure-only: ^0.2.1
     express-session: ^1.17.1
     helmet: ^4.6.0
+    http-status-codes: ^2.1.4
+    http-status-emojis: ^2.2.0
     nanoid: ^3.1.22
     passport: ^0.4.1
     passport-discord: ^0.1.4

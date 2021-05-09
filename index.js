@@ -1,5 +1,7 @@
 const { discord, github, gitlab, twitch, google, tixte, twitter } = require('./endpoints');
 const { RateLimiterRedis } = require('rate-limiter-flexible');
+const { getReasonPhrase } = require('http-status-codes');
+const statusEmojis = require('http-status-emojis');
 const protect = require('@risingstack/protect');
 const secure = require('express-secure-only');
 const session = require('express-session');
@@ -75,6 +77,17 @@ app.use(tixte);
 app.get('/', (_, res) => res.status(200).json(home));
 
 app.get('/stats', (_, res) => res.status(200).json(getStats()));
+
+app.get('/status/:code', (req, res) => {
+	const { code } = req.params;
+
+	try {
+		const text = getReasonPhrase(code);
+		res.status(code).json({ code, message: text });
+	} catch {
+		res.status(400).json({ message: 'Cannot find status code.' });
+	}
+});
 
 app.get('/logout', (req, res) => {
 	req.logout();
