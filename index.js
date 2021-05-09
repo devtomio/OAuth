@@ -1,6 +1,7 @@
-const { discord, github, gitlab, twitch, google } = require('./endpoints');
+const { discord, github, gitlab, twitch, google, tixte } = require('./endpoints');
 const { RateLimiterRedis } = require('rate-limiter-flexible');
 const protect = require('@risingstack/protect');
+const secure = require('express-secure-only');
 const session = require('express-session');
 const compression = require('compression');
 const initStats = require('@phil-r/stats');
@@ -34,6 +35,7 @@ passport.deserializeUser((obj, done) => done(null, obj));
 app.set('trust proxy', true);
 app.set('json spaces', 8);
 
+app.use(secure());
 app.use(cors());
 app.use(helmet());
 app.use(express.json());
@@ -67,6 +69,7 @@ app.use(github);
 app.use(gitlab);
 app.use(twitch);
 app.use(google);
+app.use(tixte);
 
 app.get('/', (_, res) => res.status(200).json(home));
 

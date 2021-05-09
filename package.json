@@ -11,6 +11,7 @@
     "cors": "^2.8.5",
     "ex": "^0.1.4",
     "express": "^4.17.1",
+    "express-secure-only": "^0.2.1",
     "express-session": "^1.17.1",
     "helmet": "^4.6.0",
     "morgan": "^1.10.0",
@@ -22,7 +23,8 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-twitch-latest": "^1.0.0",
     "rate-limiter-flexible": "^2.2.2",
-    "redis": "^3.1.2"
+    "redis": "^3.1.2",
+    "tixte-passport": "^1.0.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.10",
