@@ -1,6 +1,12 @@
 {
 	"title": "An example OAuth integration.",
 	"endpoints": {
+		"main": [
+			"GET /",
+			"GET /stats",
+			"GET /logout",
+			"GET /error"
+		],
 		"discord": [
 			"GET /discord/login",
 			"GET /discord/logout",
