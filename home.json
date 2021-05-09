@@ -1,0 +1,31 @@
+{
+	"title": "An example OAuth integration.",
+	"endpoints": {
+		"discord": [
+			"GET /discord/login",
+			"GET /discord/logout",
+			"GET /discord/callback",
+			"GET /discord/profile"
+		],
+		"github": [
+			"GET /github/login",
+			"GET /github/logout",
+			"GET /github/callback",
+			"GET /github/profile"
+		],
+		"gitlab": [
+			"GET /gitlab/login",
+			"GET /gitlab/logout",
+			"GET /gitlab/callback",
+			"GET /gitlab/profile"
+		],
+		"twitch": [
+			"GET /twitch/login",
+			"GET /twitch/logout",
+			"GET /twitch/callback",
+			"GET /twitch/profile"
+		]
+	},
+	"source": "https://github.com/1chiSensei/OAuth",
+	"disclaimer": "We DO NOT store any data provided by the providers."
+}
