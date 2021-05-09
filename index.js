@@ -1,4 +1,4 @@
-const { discord, github, gitlab, twitch } = require('./endpoints');
+const { discord, github, gitlab, twitch, google } = require('./endpoints');
 const { RateLimiterRedis } = require('rate-limiter-flexible');
 const protect = require('@risingstack/protect');
 const session = require('express-session');
@@ -56,7 +56,8 @@ app.use(session({
 	cookie: { 
 		secure: true
 	},
-	store: new RedisStore({ client })
+	store: new RedisStore({ client }),
+	name: nanoid(10)
 }));
 app.use(statsMiddleware);
 app.use(passport.initialize());
@@ -65,6 +66,7 @@ app.use(discord);
 app.use(github);
 app.use(gitlab);
 app.use(twitch);
+app.use(google);
 
 app.get('/', (_, res) => res.status(200).json(home));
 

@@ -140,6 +140,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/passport-google-oauth20@npm:^2.0.7":
+  version: 2.0.7
+  resolution: "@types/passport-google-oauth20@npm:2.0.7"
+  dependencies:
+    "@types/express": "*"
+    "@types/passport": "*"
+    "@types/passport-oauth2": "*"
+  checksum: 5c1cb28979632d083b2548691e47d3b469ae83b86899fce7845894b6dc1a409a21198ecf09366c6ccbaad8857203d65e02ec56fbe1f4863c35c5bb12b5e7f436
+  languageName: node
+  linkType: hard
+
 "@types/passport-oauth2@npm:*":
   version: 1.4.10
   resolution: "@types/passport-oauth2@npm:1.4.10"
@@ -1107,6 +1118,7 @@ __metadata:
     "@types/passport": ^1.0.6
     "@types/passport-discord": ^0.1.3
     "@types/passport-github2": ^1.2.4
+    "@types/passport-google-oauth20": ^2.0.7
     "@types/passport-twitch-latest": ^1.0.0
     compression: ^1.7.4
     connect-redis: ^5.2.0
@@ -1121,6 +1133,7 @@ __metadata:
     passport-discord: ^0.1.4
     passport-github2: ^0.1.12
     passport-gitlab2: ^5.0.0
+    passport-google-oauth20: ^2.0.0
     passport-twitch-latest: ^1.0.0
     rate-limiter-flexible: ^2.2.2
     redis: ^3.1.2
@@ -1181,6 +1194,15 @@ __metadata:
   dependencies:
     passport-oauth2: ^1.4.0
   checksum: e3e2f60be13063fb56586c82b6b58e1385958b2639b0389658987354c162224cffdc79d52dd58ada5c1f363a412bf9e75540bc7cce5c846e74edaaff805333cc
+  languageName: node
+  linkType: hard
+
+"passport-google-oauth20@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "passport-google-oauth20@npm:2.0.0"
+  dependencies:
+    passport-oauth2: 1.x.x
+  checksum: 151d01295638bb4fb9fc7eb986770e862f9ba7e358ba707979b58fa05db02629f642bcc8adc60fed7dc81dec3a6a0822e1c37d37ab5702b8fb43d71773491f8a
   languageName: node
   linkType: hard
 
