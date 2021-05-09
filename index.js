@@ -85,6 +85,12 @@ app.get('/status/:code', (req, res) => {
 		const text = getReasonPhrase(code);
 		res.status(code).json({ code, message: text });
 	} catch {
+		if (code === '450') return res.status(450).json({ code: '450', message: 'Blocked by Windows Parental Controls' });
+		if (code === '498') return res.status(498).json({ code: '498', message: 'Invalid Token' });
+		if (code === '499') return res.status(499).json({ code: '499', message: 'Token Required' });
+		if (code === '509') return res.status(509).json({ code: '509', message: 'Bandwidth Limit Exceeded' });
+		if (code === '529') return res.status(529).json({ code: '529', message: 'Site is overloaded' });
+
 		res.status(400).json({ message: 'Cannot find status code.' });
 	}
 });
