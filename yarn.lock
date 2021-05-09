@@ -38,6 +38,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/compression@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "@types/compression@npm:1.7.0"
+  dependencies:
+    "@types/express": "*"
+  checksum: 8725877fb88a37d29ce4150fbaafe67ba8fff64322330bfcc2462ea8e614d0072bf97c4db1b056d6bd3371cf76bde12bd31701e1fb9b02b3fdad483692ff97e7
+  languageName: node
+  linkType: hard
+
 "@types/connect@npm:*":
   version: 3.4.34
   resolution: "@types/connect@npm:3.4.34"
@@ -120,6 +129,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/passport-facebook@npm:^2.1.10":
+  version: 2.1.10
+  resolution: "@types/passport-facebook@npm:2.1.10"
+  dependencies:
+    "@types/express": "*"
+    "@types/passport": "*"
+  checksum: ca62cd8aa0fa68689155f036f7cf5a27c74ce98a58c36284845eddcc71b544e4d54913c62929e1596bda01fb536d32cb9f98a35721301842d6f4d4e57f4314cf
+  languageName: node
+  linkType: hard
+
 "@types/passport-github2@npm:^1.2.4":
   version: 1.2.4
   resolution: "@types/passport-github2@npm:1.2.4"
@@ -194,6 +213,15 @@ __metadata:
   version: 1.2.3
   resolution: "@types/range-parser@npm:1.2.3"
   checksum: 092fabae0ecbd728d3e4debc938cd043e97cb9f210cfec1c56ff6065c6e91666f376eb586591825d6757a058fd1a1dc4831d34e04ecfbb0800f35b8d86d38635
+  languageName: node
+  linkType: hard
+
+"@types/redis@npm:^2.8.28":
+  version: 2.8.28
+  resolution: "@types/redis@npm:2.8.28"
+  dependencies:
+    "@types/node": "*"
+  checksum: a6f17271c35e443999189177d44d11531808e52429a6f1aa44b12b46e35e5a29a22080991547d62201a17a01e209db57da515b58121bec3b366a824840f1f3bd
   languageName: node
   linkType: hard
 
@@ -1185,16 +1213,19 @@ __metadata:
   dependencies:
     "@phil-r/stats": ^1.4.3
     "@risingstack/protect": ^1.2.0
+    "@types/compression": ^1.7.0
     "@types/cors": ^2.8.10
     "@types/express": ^4.17.11
     "@types/express-session": ^1.17.3
     "@types/node": ^15.0.2
     "@types/passport": ^1.0.6
     "@types/passport-discord": ^0.1.3
+    "@types/passport-facebook": ^2.1.10
     "@types/passport-github2": ^1.2.4
     "@types/passport-google-oauth20": ^2.0.7
     "@types/passport-twitch-latest": ^1.0.0
     "@types/passport-twitter": ^1.0.36
+    "@types/redis": ^2.8.28
     compression: ^1.7.4
     connect-redis: ^5.2.0
     cors: ^2.8.5
@@ -1208,6 +1239,7 @@ __metadata:
     nanoid: ^3.1.22
     passport: ^0.4.1
     passport-discord: ^0.1.4
+    passport-facebook: ^3.0.0
     passport-github2: ^0.1.12
     passport-gitlab2: ^5.0.0
     passport-google-oauth20: ^2.0.0
@@ -1256,6 +1288,15 @@ __metadata:
   dependencies:
     passport-oauth2: ^1.5.0
   checksum: a56fc126b10159723d11f45d9c9678e00c62c1422253169fb33eae44a9d1468e5b883f810cad08cff7a0ea0c9c6a1844314a7c3708e2559ac02346c292eb085c
+  languageName: node
+  linkType: hard
+
+"passport-facebook@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "passport-facebook@npm:3.0.0"
+  dependencies:
+    passport-oauth2: 1.x.x
+  checksum: 5b85badeea3bda377f0a1464f8c522c0846a1bb7b36a98198448a7f057eb5ab0a69f8f749d933a2520e1c0398fd895eb846e9854fbddb5605d31aee839f9cde7
   languageName: node
   linkType: hard
 

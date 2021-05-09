@@ -8,6 +8,12 @@
 			"GET /error",
 			"GET /status/:code"
 		],
+		"facebook": [
+			"GET /facebook/login",
+			"GET /facebook/logout",
+			"GET /facebook/callback",
+			"GET /facebook/profile"
+		],
 		"discord": [
 			"GET /discord/login",
 			"GET /discord/logout",
