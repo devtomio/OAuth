@@ -58,7 +58,8 @@ app.use(session({
 	resave: false, 
 	saveUninitialized: false, 
 	cookie: { 
-		secure: true
+		secure: true,
+		maxAge: 900000
 	},
 	store: new RedisStore({ client }),
 	name: nanoid(10)
