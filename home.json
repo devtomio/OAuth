@@ -1,5 +1,7 @@
 {
 	"title": "An example OAuth integration.",
+	"source": "https://github.com/1chiSensei/OAuth",
+	"disclaimer": "We DO NOT store any data provided by the providers.",
 	"endpoints": {
 		"main": [
 			"GET /",
@@ -68,7 +70,5 @@
 			"GET /tixte/callback",
 			"GET /tixte/profile"
 		]
-	},
-	"source": "https://github.com/1chiSensei/OAuth",
-	"disclaimer": "We DO NOT store any data provided by the providers."
+	}
 }
