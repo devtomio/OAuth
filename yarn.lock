@@ -255,6 +255,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/response-time@npm:^2.3.4":
+  version: 2.3.4
+  resolution: "@types/response-time@npm:2.3.4"
+  dependencies:
+    "@types/express": "*"
+    "@types/node": "*"
+  checksum: d9323565dbb4e9cb5b17ae1cb257973f66292c49608e1c09a6e67bf0decdbf82d3c31999a770209e96a284f21e5185cebe51f4b5d4f029ec476075bb63d41884
+  languageName: node
+  linkType: hard
+
 "@types/serve-static@npm:*":
   version: 1.13.9
   resolution: "@types/serve-static@npm:1.13.9"
@@ -645,7 +655,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"depd@npm:~1.1.2":
+"depd@npm:~1.1.0, depd@npm:~1.1.2":
   version: 1.1.2
   resolution: "depd@npm:1.1.2"
   checksum: f45566ff7019a346852f095768a380778ed544de24e103b479fd5d3e61982d670efbb5234c09d0588d7fdb09c26c48283d7150e4be5e6ce5d3d37cd268d75c4d
@@ -1475,6 +1485,7 @@ __metadata:
     "@types/passport-twitch-latest": ^1.0.0
     "@types/passport-twitter": ^1.0.36
     "@types/redis": ^2.8.28
+    "@types/response-time": ^2.3.4
     compression: ^1.7.4
     connect-redis: ^5.2.0
     cors: ^2.8.5
@@ -1497,6 +1508,7 @@ __metadata:
     passport-twitter: ^1.0.4
     rate-limiter-flexible: ^2.2.2
     redis: ^3.1.2
+    response-time: ^2.3.2
     tixte-passport: ^1.0.1
     volleyball: ^1.5.1
   languageName: unknown
@@ -1544,7 +1556,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"on-headers@npm:^1.0.1, on-headers@npm:~1.0.2":
+"on-headers@npm:^1.0.1, on-headers@npm:~1.0.1, on-headers@npm:~1.0.2":
   version: 1.0.2
   resolution: "on-headers@npm:1.0.2"
   checksum: 51e75c80755169e765aa76238722e5ad1623f62b13bbc23544ade20cdbb6950cf0e6aa91de35d02ec956f47dc072ee460d8eef82354e4abf8fa692885cb3f2d8
@@ -1887,6 +1899,16 @@ __metadata:
     tunnel-agent: ^0.6.0
     uuid: ^3.3.2
   checksum: 7a74841f3024cac21d8c3cca7f7f2e4243fbd62464d2f291fddb94008a9d010e20c4a1488f4224b03412a4438a699db2a3de11019e486c8e656f86b0b79bf022
+  languageName: node
+  linkType: hard
+
+"response-time@npm:^2.3.2":
+  version: 2.3.2
+  resolution: "response-time@npm:2.3.2"
+  dependencies:
+    depd: ~1.1.0
+    on-headers: ~1.0.1
+  checksum: dad4624ef77ca37898f1e23535eaea34575c38bd7f94ae0e2f216c399c3b1ac026f4ce87f8e63f82370080542af5938710f797ea3fda97a0caadc6a923727fdd
   languageName: node
   linkType: hard
 

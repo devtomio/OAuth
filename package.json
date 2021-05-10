@@ -29,6 +29,7 @@
     "passport-twitter": "^1.0.4",
     "rate-limiter-flexible": "^2.2.2",
     "redis": "^3.1.2",
+    "response-time": "^2.3.2",
     "tixte-passport": "^1.0.1",
     "volleyball": "^1.5.1"
   },
@@ -46,6 +47,7 @@
     "@types/passport-spotify": "^1.1.0",
     "@types/passport-twitch-latest": "^1.0.0",
     "@types/passport-twitter": "^1.0.36",
-    "@types/redis": "^2.8.28"
+    "@types/redis": "^2.8.28",
+    "@types/response-time": "^2.3.4"
   }
 }

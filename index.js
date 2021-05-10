@@ -4,6 +4,7 @@ const { getReasonPhrase } = require('http-status-codes');
 const statusEmojis = require('http-status-emojis');
 const protect = require('@risingstack/protect');
 const secure = require('express-secure-only');
+const responseTime = require('response-time');
 const session = require('express-session');
 const compression = require('compression');
 const initStats = require('@phil-r/stats');
@@ -65,6 +66,7 @@ app.use(session({
 	name: nanoid(10)
 }));
 app.use(statsMiddleware);
+app.use(responseTime());
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(facebook);
