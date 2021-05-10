@@ -26,6 +26,12 @@
 			"GET /twitter/callback",
 			"GET /twitter/profile"
 		],
+		"spotify": [
+			"GET /spotify/login",
+			"GET /spotify/logout",
+			"GET /spotify/callback",
+			"GET /spotify/profile"
+		],
 		"github": [
 			"GET /github/login",
 			"GET /github/logout",

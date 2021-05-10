@@ -1,4 +1,4 @@
-const { discord, github, gitlab, twitch, google, tixte, twitter, facebook } = require('./endpoints');
+const { discord, github, gitlab, twitch, google, tixte, twitter, facebook, spotify } = require('./endpoints');
 const { RateLimiterRedis } = require('rate-limiter-flexible');
 const { getReasonPhrase } = require('http-status-codes');
 const statusEmojis = require('http-status-emojis');
@@ -69,6 +69,7 @@ app.use(passport.session());
 app.use(facebook);
 app.use(discord);
 app.use(twitter);
+app.use(spotify);
 app.use(github);
 app.use(gitlab);
 app.use(twitch);

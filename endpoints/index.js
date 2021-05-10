@@ -1,6 +1,7 @@
 const facebook = require('./facebook');
 const discord = require('./discord');
 const twitter = require('./twitter');
+const spotify = require('./spotify');
 const github = require('./github');
 const gitlab = require('./gitlab');
 const twitch = require('./twitch');
@@ -15,5 +16,6 @@ module.exports = {
 	google,
 	tixte,
 	twitter,
-	facebook
+	facebook,
+	spotify
 };
