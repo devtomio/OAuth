@@ -1503,6 +1503,7 @@ __metadata:
     passport-github2: ^0.1.12
     passport-gitlab2: ^5.0.0
     passport-google-oauth20: ^2.0.0
+    passport-reddit: Slotos/passport-reddit
     passport-spotify: ^2.0.0
     passport-twitch-latest: ^1.0.0
     passport-twitter: ^1.0.4
@@ -1626,7 +1627,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"passport-oauth2@npm:1.x.x, passport-oauth2@npm:^1.4.0, passport-oauth2@npm:^1.5.0":
+"passport-oauth2@npm:1.x.x, passport-oauth2@npm:^1.4.0, passport-oauth2@npm:^1.5.0, passport-oauth2@npm:^1.x":
   version: 1.5.0
   resolution: "passport-oauth2@npm:1.5.0"
   dependencies:
@@ -1646,6 +1647,16 @@ __metadata:
     passport-oauth1: 1.x.x
     passport-oauth2: 1.x.x
   checksum: 64d33b282d0c816bfc344c648884645cf6acef25b040ee021c13b63bc6be3bfe6d8286679b8865dfb98eea73ae8a87e0df047250e0484ab3a55995e91df34154
+  languageName: node
+  linkType: hard
+
+passport-reddit@Slotos/passport-reddit:
+  version: 0.2.4
+  resolution: "passport-reddit@https://github.com/Slotos/passport-reddit.git#commit=9717523d3d3f58447fee765c0ad864592efb67e8"
+  dependencies:
+    passport-oauth2: ^1.x
+    pkginfo: 0.3.x
+  checksum: 7f7f261b3485d9fae3f6e71ed1714bb5365418441febbb58bf597be627c287c1f4c2cbc11dc18fba40b8b6b54a776d906074b5b3f71786fef44839be07fa30d8
   languageName: node
   linkType: hard
 
@@ -1716,6 +1727,13 @@ __metadata:
   version: 2.1.0
   resolution: "performance-now@npm:2.1.0"
   checksum: bb4ebed0b03d6c3ad3ae4eddd1182c895d385cff9096af441c19c130aaae3ea70229438ebc3297dfc52c86022f6becf177a810050823d01bf5280779cd2de624
+  languageName: node
+  linkType: hard
+
+"pkginfo@npm:0.3.x":
+  version: 0.3.1
+  resolution: "pkginfo@npm:0.3.1"
+  checksum: 19eb5027392e9f6fed25686e64ca990df8439b550c08021529a0ef57e741fc53a33aa67343ca03597d448e8d3054ccb4f03b9826a2102908baabe0c72650643b
   languageName: node
   linkType: hard
 

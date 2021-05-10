@@ -24,6 +24,7 @@
     "passport-github2": "^0.1.12",
     "passport-gitlab2": "^5.0.0",
     "passport-google-oauth20": "^2.0.0",
+    "passport-reddit": "Slotos/passport-reddit",
     "passport-spotify": "^2.0.0",
     "passport-twitch-latest": "^1.0.0",
     "passport-twitter": "^1.0.4",

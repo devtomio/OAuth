@@ -56,6 +56,12 @@
 			"GET /google/callback",
 			"GET /google/profile"
 		],
+		"reddit": [
+			"GET /reddit/login",
+			"GET /reddit/logout",
+			"GET /reddit/callback",
+			"GET /reddit/profile"
+		],
 		"tixte": [
 			"GET /tixte/login",
 			"GET /tixte/logout",
