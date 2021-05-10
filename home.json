@@ -51,7 +51,6 @@
 			"GET /google/profile"
 		],
 		"tixte": [
-			"WARNING (DONT USE THIS YET)",
 			"GET /tixte/login",
 			"GET /tixte/logout",
 			"GET /tixte/callback",

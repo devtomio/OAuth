@@ -84,7 +84,7 @@ app.get('/status/:code', (req, res) => {
 
 	try {
 		const text = getReasonPhrase(code);
-		res.status(code).json({ code, message: text });
+		res.status(code).json({ code, message: `${statusEmojis[code] ? statusEmojis[code] : ''} ${text}` });
 	} catch {
 		if (code === '450') return res.status(450).json({ code: '450', message: 'Blocked by Windows Parental Controls' });
 		if (code === '498') return res.status(498).json({ code: '498', message: 'Invalid Token' });

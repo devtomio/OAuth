@@ -6,12 +6,12 @@ passport.use(new Strategy({
 	clientID: process.env.TIXTE_CLIENT_ID,
 	clientSecret: process.env.TIXTE_CLIENT_SECRET,
 	callbackURL: 'https://oauth.tomio.codes/tixte/callback',
-	scope: ['identify']
+	scope: ['identity']
 }, (_, __, profile, done) => process.nextTick(() => done(null, profile))));
 
 router.get('/tixte', (_, res) => res.redirect('https://tixte.com'));
 
-router.get('/tixte/login', passport.authenticate('tixte', { scope: ['identify'] }));
+router.get('/tixte/login', passport.authenticate('tixte', { scope: ['identity'] }));
 
 router.get('/tixte/callback', passport.authenticate('tixte', { failureRedirect: '/' }), (_, res) => res.redirect('/tixte/profile'));
 
