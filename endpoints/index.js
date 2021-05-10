@@ -8,6 +8,7 @@ const twitch = require('./twitch');
 const google = require('./google');
 const reddit = require('./reddit');
 const tixte = require('./tixte');
+const slack = require('./slack');
 
 module.exports = {
 	discord,
@@ -19,5 +20,6 @@ module.exports = {
 	twitter,
 	facebook,
 	spotify,
-	reddit
+	reddit,
+	slack
 };

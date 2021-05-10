@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@aoberoi/passport-slack": "1chiSensei/passport-slack",
     "@phil-r/stats": "^1.4.3",
     "@risingstack/protect": "^1.2.0",
     "@types/passport-facebook": "^2.1.10",

@@ -69,6 +69,12 @@
 			"GET /tixte/logout",
 			"GET /tixte/callback",
 			"GET /tixte/profile"
+		],
+		"slack": [
+			"GET /slack/login",
+			"GET /slack/logout",
+			"GET /slack/callback",
+			"GET /slack/profile"
 		]
 	}
 }

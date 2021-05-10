@@ -1,4 +1,4 @@
-const { discord, github, gitlab, twitch, google, tixte, twitter, facebook, spotify, reddit } = require('./endpoints');
+const { discord, github, gitlab, twitch, google, tixte, twitter, facebook, spotify, reddit, slack } = require('./endpoints');
 const { RateLimiterRedis } = require('rate-limiter-flexible');
 const { getReasonPhrase } = require('http-status-codes');
 const statusEmojis = require('http-status-emojis');
@@ -79,6 +79,7 @@ app.use(twitch);
 app.use(google);
 app.use(reddit);
 app.use(tixte);
+app.use(slack);
 
 app.get('/', (_, res) => res.status(200).json(home));
 
